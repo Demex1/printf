@@ -62,7 +62,7 @@ aux = malloc(sizeof(char) * 2);
 while (format && format[i])
 {
 if (format[i] == '%')
-	{
+{
 res_str = treat_format(format, &i, ap);
 count += buffer_add(buffer, res_str, &buffer_pos);
 free(res_str);
